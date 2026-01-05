@@ -21,4 +21,10 @@ public class ConsumerController {
     public List<Consumer> getAll(){
         return consumerRepository.findAll();
     }
+
+
+    @GetMapping("/check")
+    public String Testing(){
+        return "This Controller is working fine";
+    }
 }
